@@ -1,5 +1,5 @@
 import React from 'react'
-import Doc from "../assets/doc.png"
+import Doc from "../assets/doc.PNG"
 import { LiaDownloadSolid } from "react-icons/lia";
 
 const Genquiry = () => {
