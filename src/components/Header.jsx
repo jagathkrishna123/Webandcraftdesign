@@ -10,7 +10,9 @@
 
 // export default Header
 
+import { motion } from 'framer-motion';
 import React from 'react';
+
 
 const Header = () => {
   return (
@@ -27,13 +29,19 @@ const Header = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-black/40 -z-10" />
 
           {/* Text------------------------- */}
-          <h1 className="text-4xl md:text-6xl font-extralight font-mont">
+          <motion.h1 className="text-4xl md:text-6xl font-extralight font-mont" 
+            initial={{opacity: 0, y: -100}}
+            animate={{opacity: 1, y: 0}}
+            transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.4}}>
             Welcome to WAC,<br /> Team Google!
-          </h1>
+          </motion.h1>
           
-          <p className="mt-4 text-lg md:text-xl max-w-lg font-mont">
+          <motion.p className="mt-4 text-lg md:text-xl max-w-lg font-mont"
+          initial={{opacity: 0, y: -100}}
+            animate={{opacity: 1, y: 0}}
+            transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.6}}>
             Event highlights 
-          </p>
+          </motion.p>
     </div>
   );
 };

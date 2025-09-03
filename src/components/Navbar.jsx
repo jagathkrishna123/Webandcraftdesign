@@ -33,9 +33,9 @@ const Navbar = () => {
     return (
 
             <motion.nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`} 
-            initial={{y: -250}}
-            animate={{y: -10}}
-            transition={{delay: 0.2, type: 'spring', stiffness: 120}}>
+            initial={{opacity: 0, y: -100}}
+            animate={{opacity: 1, y: 0}}
+            transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.7}}>
 
                 {/* Logo */}
                 <Link to='/'>

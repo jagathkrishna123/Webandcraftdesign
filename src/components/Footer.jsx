@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Footer = () => {
@@ -21,14 +22,15 @@ const Footer = () => {
         {/* ........... */}
         <div>
           <h3 className="font-semibold mb-4">Company</h3>
-          <ul className="space-y-2 text-gray-300 cursor-pointer">
+          <motion.ul className="space-y-2 text-gray-300 cursor-pointer" initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}>
             <li>About</li>
             <li>Services</li>
             <li>Industries</li>
             <li>Works</li>
             <li>Careers</li>
             <li>Contact</li>
-          </ul>
+          </motion.ul>
         </div>
 
         {/* ...........*/}
@@ -45,7 +47,8 @@ const Footer = () => {
         {/*............... */}
         <div>
           <h3 className="font-semibold mb-4">Other</h3>
-          <ul className="space-y-2 text-gray-300 cursor-pointer">
+          <motion.ul className="space-y-2 text-gray-300 cursor-pointer" initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}>
             <li>Partnership</li>
             <li>Awards and Recognitions</li>
             <li>Insights</li>
@@ -56,7 +59,7 @@ const Footer = () => {
             <li>Submit Feedback to Our CEO</li>
             <li>Download Brochure</li>
             <li>Sitemap</li>
-          </ul>
+          </motion.ul>
         </div>
 
         {/* ............... */}
