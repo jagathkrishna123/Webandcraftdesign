@@ -4,6 +4,8 @@ import { PiPhoneCall } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
 import { CiBookmark } from "react-icons/ci";
 import { FaGripLines } from "react-icons/fa";
+import { delay, motion } from 'framer-motion';
+
 
 const Navbar = () => {
     const navLinks = [
@@ -30,7 +32,10 @@ const Navbar = () => {
 
     return (
 
-            <nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
+            <motion.nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`} 
+            initial={{y: -250}}
+            animate={{y: -10}}
+            transition={{delay: 0.2, type: 'spring', stiffness: 120}}>
 
                 {/* Logo */}
                 <Link to='/'>
@@ -62,7 +67,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="flex items-center gap-3 md:hidden">
+                <div className="flex items-center gap-3 md:hidden invert">
                     <svg onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 cursor-pointer ${isScrolled ? "invert" : ""}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <line x1="4" y1="6" x2="20" y2="6" />
                         <line x1="4" y1="12" x2="20" y2="12" />
@@ -93,7 +98,7 @@ const Navbar = () => {
                         Contact
                     </button>
                 </div>
-            </nav>
+            </motion.nav>
         
     );
 }

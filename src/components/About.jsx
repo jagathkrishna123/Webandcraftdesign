@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 bg-black h-screen mt-4'>
-            <div className='flex flex-col items-start justify-center p-8 border bg-black'>
+            <div className='flex flex-col items-start justify-center p-8 bg-black'>
                 <div className='mx-auto max-w-2xl'>
                     <p className='text-gray-300 text-left text-[45px] sm:text-[60px] md:text-[75px] font-mont'>Our Story</p>
                     <p className='text-gray-200 text-[18px] sm:text-[21px] md:text-[25px] font-mont'>In a world brimming with possibilities, we sprouted,

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_94006" data-name="Rectangle 94006" width="45" height="45" transform="translate(17993 -19302.498)" fill="#c9c9c9" opacity="0.5"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_235083" data-name="Mask Group 235083" transform="translate(-17993 19302.498)" clip-path="url(#clip-path)">
+    <g id="Group_238888" data-name="Group 238888" transform="translate(17997.547 -19300.324)">
+      <path id="Path_214947" data-name="Path 214947" d="M33.747,16.64A16.39,16.39,0,1,1,23.53,5.508" transform="translate(-1.5 1.354)" fill="none" stroke="#765cea" stroke-width="3"/>
+      <path id="Path_214948" data-name="Path 214948" d="M22.259,18.666a6.611,6.611,0,1,1-6.612-6.612" transform="translate(0.759 3.612)" fill="none" stroke="#765cea" stroke-width="3"/>
+      <g id="Group_238887" data-name="Group 238887" transform="translate(16.406)">
+        <line id="Line_7655" data-name="Line 7655" y1="16.157" x2="16.157" transform="translate(0 6.12)" fill="none" stroke="#765cea" stroke-width="3"/>
+        <line id="Line_7656" data-name="Line 7656" y1="7.958" transform="translate(14.32)" fill="none" stroke="#765cea" stroke-width="3"/>
+        <line id="Line_7657" data-name="Line 7657" x1="7.817" transform="translate(14.32 7.957)" fill="none" stroke="#765cea" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

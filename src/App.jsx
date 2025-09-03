@@ -1,12 +1,16 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Sliders from './components/Sliders'
+// import Sliders from './components/Sliders'
 import Scrolltitles from './components/Scrolltitles'
 import Cards from './components/Cards'
 import About from './components/About'
 import Whatwedo from './components/Whatwedo'
 import Genai from './components/Genai'
+import Clients from './components/Clients'
+import Footer from './components/Footer'
+import Contact from './components/Contact'
+import Locations from './pages/Locations'
 
 const App = () => {
   return (
@@ -15,12 +19,16 @@ const App = () => {
       <div className='min-h-[70vh]'>
         <Home/>
       </div>
-      <Sliders/>
-      {/* <Scrolltitles/> */}
       <Cards/>
       <About/>
       <Whatwedo/>
       <Genai/>
+      <Clients/>
+      <Footer/>
+      <div className='bg-black'>
+        <Contact/>
+        {/* <Locations/> */}
+      </div>
     </div>
   )
 }
