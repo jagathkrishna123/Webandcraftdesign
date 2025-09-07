@@ -48,7 +48,7 @@ const Cards = () => {
         {/* border apply here vv */}
             <div className='w-full grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-5 gap-y-[60px] px-3 py-3 sm:px-0 items-center justify-center max-w-7xl'> 
                 {cases.map((item,index)=> (
-                    <div key={index} className='w-80 sm:w-64 lg:w-96 rounded-md overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 mx-auto'>
+                    <div key={index} className='w-full rounded-md overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 mx-auto'>
                         <img src={item.img} alt="" className='rounded-md' />
                         <div className='flex flex-col gap-3 mt-4'>
                             <p className='text-[13px] md:text-[16px] text-gray-900 font-mont font-semibold'>{item.title}</p>

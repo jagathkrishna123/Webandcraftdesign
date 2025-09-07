@@ -111,3 +111,62 @@ export const OUR_CLIENTS = [
     },
 
 ]
+
+export const SERVICESDATA = [
+    {
+        title: "Experience Design",
+        listitems: [
+            "UI/UX Design",
+            "Website Design",
+            "Mobile Experience",
+            "Commerce Experience",
+            "Human Machine Interface (HMI)",
+            "Applications and Dashboards",
+            "Wearable App Design",
+        ],
+        video: "/videos/mock1.mp4"
+    },
+    {
+        title: "Technology",
+        listitems: [
+            "Overview",
+            "DevOps Consulting",
+            "Data & Analytics",
+            "AI & Machine Learning",
+            "Web Development",
+            "Mobile App Development",
+            "Ecommerce",
+            "Quality Assurance & Tesing",
+            "Cloud Services",
+            "Cyber Security",
+        ],
+        video: "/videos/mock2.mp4"
+    },
+    {
+        title: "Digital Marketing",
+        listitems: [
+            "Overview",
+            "Social Media Management",
+            "Performance Marketing",
+            "Search Engine Optimisation",
+            "Content Marketing",
+            "Marketing Automation",
+            "Analytics",
+        ],
+        video: "/videos/mock3.mp4"
+    },
+    {
+        title: "Branding",
+        listitems: [
+            "Overview",
+            "Brand Consulting",
+            "Logo Design",
+            "Brand Collateral",
+            "Graphic Design",
+            "2D / 3D Visualisation",
+            "Brand Identity",
+            "Industrial Product Design",
+        ],
+        video: "/videos/mock4.mp4"
+    },
+]

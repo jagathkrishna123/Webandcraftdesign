@@ -11,6 +11,7 @@ import Clients from './components/Clients'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Locations from './pages/Locations'
+import Servicesection from './pages/Servicesection'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <div className='bg-black'>
         <Contact/>
         {/* <Locations/> */}
+        <Servicesection/>
       </div>
     </div>
   )
