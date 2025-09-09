@@ -12,6 +12,9 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Locations from './pages/Locations'
 import Servicesection from './pages/Servicesection'
+import Servicesectioxxx from './pages/Servicesectioxxx'
+import CaseStudies from './pages/CaseStudies'
+import Solutions from './pages/Solutions'
 
 const App = () => {
   return (
@@ -29,7 +32,12 @@ const App = () => {
       <div className='bg-black'>
         <Contact/>
         {/* <Locations/> */}
-        <Servicesection/>
+        {/* <Servicesection/> */}
+        <Servicesectioxxx/>
+      </div>
+      <CaseStudies/>
+      <div className='bg-gradient-to-b from-green-100 via-green-300 to-green-100'>
+        <Solutions/>
       </div>
     </div>
   )
