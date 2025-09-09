@@ -350,6 +350,16 @@ export const CASESTUDIESWORKDATA = [
         title: "Engineering Services",
         subtitle: "Pen & Process: Digital marking for technical documentation and training expert",
     },
+    {
+        media: Solution2,
+        title: "Media",
+        subtitle: "Joyalukkas Exchange: A well-crafted currency exchange app to seize the world's market",
+    },
+    {
+        media: Solution3,
+        title: "Engineering Services",
+        subtitle: "Pen & Process: Digital marking for technical documentation and training expert",
+    },
 ]
 
 export const SOLUTIONDATA = [
