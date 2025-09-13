@@ -32,6 +32,31 @@ import Solution2 from "../assets/solution2.jpg"
 import Solution3 from "../assets/solution3.jpg"
 import Solution4 from "../assets/solution4.jpg"
 
+import { BsFillBoxFill, BsGraphUpArrow } from "react-icons/bs"
+import { LiaAtomSolid } from "react-icons/lia"
+import { IoBagCheck } from "react-icons/io5"
+import { LuMessageSquareText } from "react-icons/lu"
+import { FaGlobe } from "react-icons/fa"
+
+import Graphicon from "../assets/graph.png"
+import Atomicon from "../assets/atom.png"
+import Bagicon from "../assets/bag.png"
+import Boxicon from "../assets/box.png"
+import Messageicon from "../assets/message.png"
+import Globeicon from "../assets/globe.png"
+import { title } from "framer-motion/client"
+import Carimg from "../assets/car.jpg"
+import Cityimg from "../assets/city.jpg"
+import landscape from "../assets/landscape.jpg"
+
+
+
+
+
+
+
+
+
 
 
 
@@ -386,5 +411,60 @@ export const SOLUTIONDATA = [
         img:Solution4,
         title:"Warehouse Management system",
         description:"Our warehouse management system delivers smart inventory distribution, real-time stock tracking, and maximized storage efficiency. Through intelligent automation, we boost picking speed and cut operational expenses by eliminating inefficiencies.",
+    },
+]
+
+
+export const WACCOMMERCE = [
+    {
+        img: Graphicon,
+        title:"Accelerate Multi-Category & High-Volume Sales",
+        subtitle:"Scale operations with intelligent inventory management and automated processing.",
+    },
+    {
+        img: Atomicon,
+        title:"Drive Omnichannel Excellence in Work",
+        subtitle:"Unify online, mobile, and in-store experiences seamlessly across touchpoints.",
+    },
+    {
+        img: Bagicon,
+        title:"Empower B2B & Wholesale Operations",
+        subtitle:"Streamline bulk orders with custom pricing and automated workflows.",
+    },
+    {
+        img: Boxicon,
+        title:"Optimize Supply Chain & Fulfillment",
+        subtitle:"Maximize efficiency through predictive analytics and intelligent logistics automation.",
+    },
+    {
+        img: Messageicon,
+        title:"Enhance Customer Engagement & Personalization",
+        subtitle:"Boost loyalty with AI-driven recommendations and targeted campaigns.",
+    },
+    {
+        img: Globeicon,
+        title:"Global Expansion & Localization",
+        subtitle:"Enter new markets by utilizing multi-currency support and compliance tools.",
+    },
+]
+
+export const INSIGHTS = [
+    {
+        img:Carimg,
+        time:" . 8 mins read",
+        date:"September 10 2025",
+        title: "How to speed up your wooocommerce"
+    },
+    {
+        img:Cityimg,
+        time:" . 13 mins read",
+        date:"September 23 2025",
+        title: "Which is the best python web frameworks: Django, flask"
+    },
+    {
+        img:landscape,
+        time:" . 10 mins read",
+        date:"September 10 2025",
+        title: "Unlimited Guides to B2B Saas"
     },
 ]

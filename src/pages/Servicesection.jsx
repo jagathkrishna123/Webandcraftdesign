@@ -21,14 +21,14 @@ const Servicesection = () => {
   return (
     <div className="w-full bg-white font-mont">
 
-      
+      {/* w-full for banner image */}
       <section
         className="w-full h-[300px] bg-cover bg-center flex items-center justify-center px-6"
         style={{ backgroundImage: `url(${Servicebg})` }}>
         <h1 className="text-white text-[50px] font-mont w-7xl flex px-2 md:px-3">Our Services</h1>
       </section>
 
-      
+      {/* max-w-7xl */}
       <section className="flex flex-col md:flex-row gap-10 px-2 md:px-3 py-16 max-w-7xl items-center justify-center mx-auto">
         
         {/* Left Side */}

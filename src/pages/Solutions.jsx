@@ -68,7 +68,7 @@ const Solutions = () => {
         {SOLUTIONDATA.map((item, index) => (
           <div
             key={item.id}
-            className={`w-full flex flex-col md:flex-row items-center mt-6 md:mt-3 gap-3 justify-between ${
+            className={`w-full flex flex-col md:flex-row items-center mt-6 md:mt-3 gap-3 p-3 justify-between ${
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             } `}
           >
@@ -88,10 +88,10 @@ const Solutions = () => {
       <div className="max-w-7xl w-full h-[500px] md:h-auto rounded-lg mt-16 flex flex-col xl:flex-row justify-start p-16 gap-2 relative border border-gray-400 bg-gradient-to-r from-green-400 via-cyan-400 to-green-700 shadow-lg">
         <div className="max-w-xl flex flex-col">
           <div className="w-full flex flex-col items-center justify-center md:items-start md:justify-start">
-            <span className="text-[35px] sm:text-[40px] md:text-[48px]">
+            <span className="text-[30px] sm:text-[40px] md:text-[48px] text-center">
               Get Started with WAC
             </span>
-            <span className="text-[35px] sm:text-[40px] md:text-[48px]">
+            <span className="text-[30px] sm:text-[40px] md:text-[48px] text-center">
               Commerce
             </span>
           </div>
@@ -111,14 +111,14 @@ const Solutions = () => {
           />
         </div>
       </div>
-      {/* section4 xxxxxxxxxxxxxx */}
-      <div className="w-full flex flex-row items-center justify-center bg-amber-600 mt-16 rounded-sm p-2">
+      {/* section4 xxxxxxxxxxbg-amber-600xxxx */}
+      <div className="w-full flex flex-row items-center justify-center mt-16 rounded-sm p-2">
         <div className="w-full flex flex-col gap-3">
-          <p className="sm:text-[26px] md:text-[30px] lg:text-[48px] max-w-xl md:max-w-xl lg:max-w-2xl">
+          <p className="text-[26px] md:text-[40px] lg:text-[48px] max-w-xl md:max-w-xl lg:max-w-2xl">
             One Store, Every Channel: Reach Your Customers Anywhere
           </p>
-          <div className="max-w-md bg-amber-950">
-            <div className="w-full bg-gray-400 flex flex-row gap-2 p-2">
+          <div className="max-w-md">
+            <div className="w-full  flex flex-row gap-2 p-2">
               <div className="pl-1 pr-1">
                 <BsArrowsMove className="text-[26px]" />
               </div>
@@ -130,40 +130,41 @@ const Solutions = () => {
                 </p>
               </div>
             </div>
+            <hr className="border-t-2 border-gray-200 my-3"/>
           </div>
 
-          <div className="max-w-md bg-amber-950">
-            <div className="w-full bg-gray-400 flex flex-row gap-2 p-2">
+          <div className="max-w-md">
+            <div className="w-full  flex flex-row gap-2 p-2">
               <div className="pl-1 pr-1">
                 <LuMessageSquareMore className="text-[26px]" />
               </div>
               <div className="flex flex-col">
-                <h2 className="text-[20px] font-medium">Unified Operations</h2>
+                <h2 className="text-[20px] font-medium">Seamless Experiences</h2>
                 <p className="text-[16px]">
-                  Centralize inventory, orders, and customer data across all
-                  sales channels for streamlined business management.
+                  Deliver consistent, personalized customer journeys whether shopping online, in-store, or via mobile.
+                </p>
+              </div>
+            </div>
+            <hr className="border-t-2 border-gray-200 my-3"/>
+          </div>
+
+          <div className="max-w-md">
+            <div className="w-full flex flex-row gap-2 p-2">
+              <div className="pl-1 pr-1">
+                <SiHackthebox className="text-[26px]" />
+              </div>
+              <div className="flex flex-col">
+                <h2 className="text-[20px] font-medium">Expedited Fulfillment</h2>
+                <p className="text-[16px]">
+                  Accelerate order processing and delivery through intelligent routing and automated warehouse operations.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="max-w-md bg-amber-950">
-            <div className="w-full bg-gray-400 flex flex-row gap-2 p-2">
-              <div className="pl-1 pr-1">
-                <SiHackthebox className="text-[26px]" />
-              </div>
-              <div className="flex flex-col">
-                <h2 className="text-[20px] font-medium">Unified Operations</h2>
-                <p className="text-[16px]">
-                  Centralize inventory, orders, and customer data across all
-                  sales channels for streamlined business management.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div className="flex flex-col">
-          <img className="mt-7" src={Solbg} alt="" />
+        <div className="flex-col hidden md:block">
+          <img className="mt-16" src={Solbg} alt="" />
         </div>
       </div>
     </div>

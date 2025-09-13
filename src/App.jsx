@@ -15,6 +15,9 @@ import Servicesection from './pages/Servicesection'
 import Servicesectioxxx from './pages/Servicesectioxxx'
 import CaseStudies from './pages/CaseStudies'
 import Solutions from './pages/Solutions'
+import Waccommerce from './pages/Waccommerce'
+import Banner2 from './pages/Banner2'
+import Insights from './pages/Insights'
 
 const App = () => {
   return (
@@ -36,9 +39,12 @@ const App = () => {
         <Servicesectioxxx/>
       </div>
       <CaseStudies/>
-      <div className='bg-gradient-to-b from-green-100 via-green-300 to-green-100'>
+      <div className='bg-gradient-to-b from-green-100 via-green-300 to-gray-50'>
         <Solutions/>
+        <Waccommerce/>
       </div>
+      <Banner2/>
+      <Insights/>
     </div>
   )
 }
