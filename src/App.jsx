@@ -18,6 +18,7 @@ import Solutions from './pages/Solutions'
 import Waccommerce from './pages/Waccommerce'
 import Banner2 from './pages/Banner2'
 import Insights from './pages/Insights'
+import Industries from './pages/Industries'
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
       </div>
       <Banner2/>
       <Insights/>
+      <Industries/>
     </div>
   )
 }

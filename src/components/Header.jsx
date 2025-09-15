@@ -29,11 +29,11 @@ const Header = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-black/40 -z-10" />
 
           {/* Text------------------------- */}
-          <motion.h1 className="text-4xl md:text-6xl font-extralight font-mont" 
+          <motion.h1 className="text-4xl md:text-6xl font-extralight font-mont leading-relaxed" 
             initial={{opacity: 0, y: -100}}
             animate={{opacity: 1, y: 0}}
             transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.4}}>
-            Welcome to WAC,<br /> Team Google!
+           The Ultimate Software<br /> <span>For Your Business</span>
           </motion.h1>
           
           <motion.p className="mt-4 text-lg md:text-xl max-w-lg font-mont"

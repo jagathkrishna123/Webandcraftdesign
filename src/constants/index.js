@@ -468,3 +468,66 @@ export const INSIGHTS = [
         title: "Unlimited Guides to B2B Saas"
     },
 ]
+
+export const INDUSTRYDATA = [
+    {
+        text: "Automobile"
+    },
+    {
+        text: "Beauty"
+    },
+    {
+        text: "Construction"
+    },
+    {
+        text: "Corporate"
+    },
+    {
+        text: "Education"
+    },
+    {
+        text: "Electronics"
+    },
+    {
+        text: "Engineering Services"
+    },
+    {
+        text: "Entertainment"
+    },
+    {
+        text: "Fashion"
+    },
+    {
+        text: "Financial"
+    },
+    {
+        text: "Food"
+    },
+    {
+        text: "Healthcare"
+    },
+    {
+        text: "Information Technology"
+    },
+    {
+        text: "Manufacturing"
+    },
+    {
+        text: "Media"
+    },
+    {
+        text: "Non Profit Organisation"
+    },
+    {
+        text: "Real Estate"
+    },
+    {
+        text: "Retail"
+    },
+    {
+        text: "Social"
+    },
+    {
+        text: "Travel and Tourism"
+    },
+]

@@ -5,6 +5,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { CiBookmark } from "react-icons/ci";
 import { FaGripLines } from "react-icons/fa";
 import { delay, motion } from 'framer-motion';
+import Scannteklogo from "../assets/scanntek.png"
 
 
 const Navbar = () => {
@@ -32,14 +33,14 @@ const Navbar = () => {
 
     return (
 
-            <motion.nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`} 
+            <motion.nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-2" : "py-4 md:py-6"}`} 
             initial={{opacity: 0, y: -100}}
             animate={{opacity: 1, y: 0}}
             transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.7}}>
 
                 {/* Logo */}
                 <Link to='/'>
-                    <img src="https://webandcrafts.com/image/logo1.svg" alt="logo" className={`h-9 outline-none w-[55px] md:w-[90px] ${isScrolled && "invert opacity-80"}`} />
+                    <img src={Scannteklogo} alt="logo" className={` outline-none w-[70px] md:w-[190px] ${isScrolled && "invert opacity-80"}`} />
                 </Link>
 
                 {/* Desktop Nav */}
