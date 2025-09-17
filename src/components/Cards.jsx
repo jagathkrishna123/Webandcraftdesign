@@ -43,8 +43,8 @@ const cases = [
 ]
 const Cards = () => {
   return (
-    <div className='w-full h-full flex flex-col items-center text-gray-800  gap-4 font-mont'>
-        <h1 className='text-[30px] md:text-[53px] font-medium'>Case Studies</h1>
+    <div className='max-w-7xl flex flex-col items-center text-gray-800  gap-4 font-mont mb-4 mx-auto'>
+        <h1 className='w-full text-[30px] md:text-[53px] font-medium'>Case Studies</h1>
         {/* border apply here vv */}
             <div className='w-full grid grid-cols-1 mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-5 gap-y-[60px] px-3 py-3 sm:px-0 items-center justify-center max-w-7xl'> 
                 {cases.map((item,index)=> (

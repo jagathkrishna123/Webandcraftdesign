@@ -22,7 +22,7 @@ const Servicesectioxxx = () => {
        
         {/* Left Side */}
                 <div className="flex-1">
-                    <h2 className="text-[42px] font-normal mb-6">{section.title}</h2>
+                    <h2 className="text-[35px] md:text-[42px] font-normal mb-6">{section.title}</h2>
 
                     <div className="max-h-[250px] overflow-y-auto border-gray-200 pl-6 space-y-4 custom-scroll">
                         {section.listitems.map((item, index)=> (
@@ -66,7 +66,7 @@ const Servicesectioxxx = () => {
 
         {/* Right Side */}
                 <div className="flex-1">
-                    <h2 className="text-[42px] font-normal mb-6">{section.title}</h2>
+                    <h2 className="text-[35px] md:text-[42px] font-normal mb-6">{section.title}</h2>
 
                     <div className="max-h-[250px] overflow-y-auto border-gray-200 pl-6 space-y-4 custom-scroll">
                         {section.listitems.map((item, index)=> (
@@ -87,7 +87,7 @@ const Servicesectioxxx = () => {
        
         {/* Left Side */}
                 <div className="flex-1">
-                    <h2 className="text-[42px] font-normal mb-6">{section.title}</h2>
+                    <h2 className="text-[35px] md:text-[42px] font-normal mb-6">{section.title}</h2>
 
                     <div className="max-h-[250px] overflow-y-auto border-gray-200 pl-6 space-y-4 custom-scroll">
                         {section.listitems.map((item, index)=> (
@@ -129,7 +129,7 @@ const Servicesectioxxx = () => {
 
         {/* Right Side */}
                 <div className="flex-1">
-                    <h2 className="text-[42px] font-normal mb-6">{section.title}</h2>
+                    <h2 className="text-[35px] md:text-[42px] font-normal mb-6">{section.title}</h2>
 
                     <div className="max-h-[250px] overflow-y-auto border-gray-200 pl-6 space-y-4 custom-scroll">
                         {section.listitems.map((item, index)=> (
@@ -146,10 +146,10 @@ const Servicesectioxxx = () => {
 {/* ........................OUR IMPACT............................... */}
         <div className="w-full max-w-7xl mx-auto font-mont mb-6">
             <div className="w-full flex items-center justify-center">
-                <h2 className="text-[42px] ">Our Impact</h2>
+                <h2 className="text-[35px] md:text-[42px] ">Our Impact</h2>
             </div>
             <div className="w-full flex flex-col items-center justify-center mt-8">
-                <p className="text-center max-w-3xl font-mont text-[17px]">Every innovation that happens here is out of a quest to get better at
+                <p className="text-center max-w-3xl font-mont text-[10px] md:text-[17px]">Every innovation that happens here is out of a quest to get better at
                      what we are already doing. We deliver ideas that make a difference, 
                      create experiences that transform lives and build ecosystems that foster progress.
                 </p>

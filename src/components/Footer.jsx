@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { CiFacebook, CiInstagram, CiLinkedin, CiYoutube } from "react-icons/ci";
+import { FaBehance, FaDribbble, FaFacebook, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -82,6 +84,23 @@ const Footer = () => {
               <span className="font-medium">Whatsapp (Sales)</span> <p>: +91 8606 483 399</p>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-0 max-w-7xl mx-auto mt-12 items-center justify-between text-gray-400">
+        <div>
+          <h2>Scanntek © 2025 All rights reserved</h2>
+        </div>
+        <div>
+          <h2>Privacy Policy | Terms & Conditions</h2>
+        </div>
+        <div className="max-w-lg flex flex-row justify-between items-center gap-[25px]">
+          <FaLinkedin  className="text-[26px] text-gray-300"/>
+          <FaYoutube  className="text-[26px] text-gray-300"/>
+          <CiInstagram  className="text-[26px] text-gray-300"/>
+          <FaFacebook  className="text-[26px] text-gray-300"/>
+          <FaDribbble  className="text-[26px] text-gray-300"/>
+          <FaBehance  className="text-[26px] text-gray-300"/>
+          <FaXTwitter  className="text-[26px] text-gray-300"/>
         </div>
       </div>
     </div>

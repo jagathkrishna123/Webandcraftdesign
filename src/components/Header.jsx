@@ -33,7 +33,7 @@ const Header = () => {
             initial={{opacity: 0, y: -100}}
             animate={{opacity: 1, y: 0}}
             transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.4}}>
-           The Ultimate Software<br /> <span>For Your Business</span>
+           The Ultimate Software<br /> <span>For Your Businessxx</span>
           </motion.h1>
           
           <motion.p className="mt-4 text-lg md:text-xl max-w-lg font-mont"

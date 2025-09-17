@@ -11,14 +11,17 @@ import Scannteklogo from "../assets/scanntek.png"
 const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Services', path: '/' },
-        { name: 'Solutions', path: '/' },
-        { name: 'Industries', path: '/' },
-        { name: 'Works', path: '/' },
+        { name: 'Services', path: '/services' },
+        { name: 'Solutions', path: '/solution' },
+        { name: 'Industries', path: '/industries' },
+        { name: 'Works', path: '/case-studies' },
         { name: 'About', path: '/' },
         { name: 'Careers', path: '/' },
     ];
 
+      // List of paths that need special navbar background
+  const specialPaths = ["/solution", "/services", "/industries", "/case-studies"];
+  const isSpecialPage = specialPaths.includes(location.pathname);
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,14 +36,19 @@ const Navbar = () => {
 
     return (
 
-            <motion.nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-2" : "py-4 md:py-6"}`} 
-            initial={{opacity: 0, y: -100}}
-            animate={{opacity: 1, y: 0}}
-            transition={{type: "spring", stiffness: 100, damping: 10, delay: 0.7}}>
-
+                <nav className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 font-mont
+      ${isSpecialPage 
+        ? "bg-green-500 text-white py-4 sm:py-2 md:py-1"           // special page background
+        : isScrolled 
+          ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-2"  // scrolled
+          : "bg-black/0 text-white py-4 md:py-6"          // default
+      }`}
+    >
                 {/* Logo */}
                 <Link to='/'>
-                    <img src={Scannteklogo} alt="logo" className={` outline-none w-[70px] md:w-[190px] ${isScrolled && "invert opacity-80"}`} />
+                    <div>
+                        <img src={Scannteklogo} alt="logo" className={` outline-none w-[100px] md:w-[190px] border-none ${isScrolled && "invert opacity-80"}`} />
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -58,13 +66,13 @@ const Navbar = () => {
 
                 {/* Desktop Right */}
                 <div className="hidden md:flex items-center gap-6">
-                    <button className={`px-8 py-2.5 rounded-lg ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
+                    <button className={`px-8 py-2.5 rounded-lg ml-4 transition-all duration-500 cursor-pointer ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
                         Contact
                     </button>
                     <PiPhoneCall size={28} color="white" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
                     <IoSearchOutline size={28} color="white" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
                     <CiBookmark size={28} color="white" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
-                    <FaGripLines size={28} color="white" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/>
+                    {/* <FaGripLines size={28} color="white" className={`${isScrolled && 'invert'} h-7 transition-all duration-500`}/> */}
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -77,7 +85,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className={`fixed top-0 left-0 w-full h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+                <div className={`fixed top-0 left-0 w-md h-screen bg-white text-base flex flex-col md:hidden items-center justify-center gap-6 font-medium text-gray-800 transition-all duration-500 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
                     <button className="absolute top-4 right-4" onClick={() => setIsMenuOpen(false)}>
                         <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                             <line x1="18" y1="6" x2="6" y2="18" />
@@ -96,10 +104,10 @@ const Navbar = () => {
                     </button> */}
 
                     <button className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
-                        Contact
+                        Contactxx
                     </button>
                 </div>
-            </motion.nav>
+            </nav>
         
     );
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { INDUSTRYDATA } from "../constants";
+import Insights from "./Insights";
 
 const Industries = () => {
   const [number, setNumber] = useState(0);
@@ -61,6 +62,7 @@ const Industries = () => {
           </div>
         ))}
       </div>
+      <Insights/>
     </div>
   );
 };

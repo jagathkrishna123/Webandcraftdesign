@@ -50,7 +50,11 @@ import Cityimg from "../assets/city.jpg"
 import landscape from "../assets/landscape.jpg"
 
 
-
+import Img1 from "../assets/img1.jpg"
+import Img2 from "../assets/img2.jpg"
+import Img3 from "../assets/img3.jpg"
+import Img4 from "../assets/img4.jpg"
+import Img5 from "../assets/img5.jpg"
 
 
 
@@ -531,3 +535,47 @@ export const INDUSTRYDATA = [
         text: "Travel and Tourism"
     },
 ]
+
+
+export const projects = [
+  {
+    title: "Matthias Leidinger",
+    description:
+      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
+    src: Img1,
+    link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
+    color: "#BBACAF",
+  },
+  {
+    title: "Clément Chapillon",
+    description:
+      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes.",
+    src: Img2,
+    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
+    color: "#977F6D",
+  },
+  {
+    title: "Zissou",
+    description:
+      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
+    src: Img3,
+    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
+    color: "#3a3659",
+  },
+  {
+    title: "Mathias Svold and Ulrik Hasemann",
+    description:
+      "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+    src: Img4,
+    link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
+    color: "#12404f",
+  },
+  {
+    title: "Mark Rammers",
+    description:
+      "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’.",
+    src: Img5,
+    link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
+    color: "#88A28D",
+  },
+];

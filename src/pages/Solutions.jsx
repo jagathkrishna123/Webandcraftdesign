@@ -17,7 +17,7 @@ const Solutions = () => {
       </div>
 
       <div className="w-full flex flex-col items-center gap-3">
-        <h2 className="text-[70px] font-medium max-w-2xl text-center items-center justify-center flex flex-col leading-snug">
+        <h2 className="text-[50px] md:text-[70px] font-medium max-w-2xl text-center items-center justify-center flex flex-col leading-snug">
           {/* Introducing WAC Commerce */}
           <span>Introducing</span>
           <span>WAC Commerce</span>
@@ -36,7 +36,7 @@ const Solutions = () => {
       </div>
       <div className="flex items-center justify-center mt-8">
         <video
-          className="max-w-3xl shadow-lg rounded-md"
+          className="max-w-sm md:max-w-3xl shadow-lg rounded-md"
           src="/videos/solutionvid.mp4"
           autoPlay
           loop

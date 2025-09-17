@@ -10,8 +10,8 @@ const Contact = () => {
   const [activeTab, setActiveTab] = useState("getaquote");
 
   return (
-    <>
-    <div className="max-w-7xl flex flex-col md:flex-row p-4 md:p-3  font-mont mx-auto text-white">
+    <div className="w-full bg-black">
+    <div className="max-w-7xl flex flex-col md:flex-row p-4 md:p-3  font-mont mx-auto text-white bg-black">
       <div className="flex flex-1">
         {activeTab === "getaquote" && <Getaquote />}
         {activeTab === "partnership" && <Partnership />}
@@ -86,7 +86,7 @@ const Contact = () => {
       </div>
     </div>
     <Locations/>
-    </>
+    </div>
   );
 };
 
