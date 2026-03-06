@@ -149,7 +149,7 @@ const Servicesectioxxx = () => {
                 <h2 className="text-[35px] md:text-[42px] ">Our Impact</h2>
             </div>
             <div className="w-full flex flex-col items-center justify-center mt-8">
-                <p className="text-center max-w-3xl font-mont text-[10px] md:text-[17px]">Every innovation that happens here is out of a quest to get better at
+                <p className="text-center max-w-3xl font-mont text-[14px] md:text-[17px]">Every innovation that happens here is out of a quest to get better at
                      what we are already doing. We deliver ideas that make a difference, 
                      create experiences that transform lives and build ecosystems that foster progress.
                 </p>
@@ -170,16 +170,16 @@ const Servicesectioxxx = () => {
             </div> */}
              <div className="w-full grid grid-cols-3 gap-5 mt-5">
                 <div className="flex flex-col items-center">
-                    <h2 className="text-center text-[42px]">700+</h2>
-                    <p className="max-w-xs text-center text-[16px]">Projects launched successfully across the globe</p>
+                    <h2 className="text-center text-[32px] md:text-[42px]">700+</h2>
+                    <p className="max-w-xs text-center text-[14px] md:text-[16px]">Projects launched successfully across the globe</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <h2 className="text-center text-[42px]">10M</h2>
-                    <p className="max-w-xs text-center text-[16px]">Daily customer engagement through our projects</p>
+                    <h2 className="text-center text-[32px] md:text-[42px]">10M</h2>
+                    <p className="max-w-xs text-center text-[14px] md:text-[16px]">Daily customer engagement through our projects</p>
                 </div>
                 <div className="flex flex-col items-center">
-                    <h2 className="text-center text-[42px]">100+</h2>
-                    <p className="max-w-xs text-center text-[16px]">Digital transformation stories that made a difference</p>
+                    <h2 className="text-center text-[32px] md:text-[42px]">100+</h2>
+                    <p className="max-w-xs text-center text-[14px] md:text-[16px]">Digital transformation stories that made a difference</p>
                 </div>
             </div>
             <div className="flex items-center justify-center">

@@ -9,11 +9,11 @@ const CaseStudies = () => {
     <div className='w-full max-w-7xl flex flex-col items-center justify-center mx-auto p-3 font-mont bg-white'>
         <div className='w-full flex flex-row items-center justify-between'>
             <div>
-                <h2 className='text-[53px] font-mont'>Case Studies</h2>
+                <h2 className='text-[38px] md:text-[53px] font-mont'>Case Studies</h2>
             </div>
             <div className='flex flex-row max-w-md gap-3'>
-                <button className='text-[16px] border border-gray-900 rounded-full px-4 py-2 flex flex-row items-center gap-2'>Industries <IoIosArrowDown /></button>
-                <button className='text-[16px] border border-gray-900 rounded-full px-4 py-2 flex flex-row items-center gap-2'>Expertise <IoIosArrowDown /></button>
+                <button className='text-[13px] md:text-[16px] border border-gray-900 rounded-full px-4 py-2 flex flex-row items-center gap-2'>Industries <IoIosArrowDown /></button>
+                <button className='text-[13px] md:text-[16px] border border-gray-900 rounded-full px-4 py-2 flex flex-row items-center gap-2'>Expertise <IoIosArrowDown /></button>
             </div>
         </div>
 {/* bg-gray-500 vv */}

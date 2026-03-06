@@ -228,47 +228,94 @@
 // export default Test;
 
 // src/App.jsx
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+// import React from "react";
+// import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+// import Contact from "./components/Contact";
 
-import Homepagelayout from "./components/Homepagelayout";
-import CaseStudies from "./pages/CaseStudies";
-import Servicesectioxxx from "./pages/Servicesectioxxx";
-import Solutions from "./pages/Solutions";
-import Waccommerce from "./pages/Waccommerce";
-import Insights from "./pages/Insights";
-import Industries from "./pages/Industries";
+// import Homepagelayout from "./components/Homepagelayout";
+// import CaseStudies from "./pages/CaseStudies";
+// import Servicesectioxxx from "./pages/Servicesectioxxx";
+// import Solutions from "./pages/Solutions";
+// import Waccommerce from "./pages/Waccommerce";
+// import Insights from "./pages/Insights";
+// import Industries from "./pages/Industries";
 
-const App = () => {
-  return (
-    <div className="overflow-x-hidden">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepagelayout />} />
-        <Route
-          path="/services"
-          element={
-            <>
-              <Servicesectioxxx />
-              <Solutions />
-              <Waccommerce />
-            </>
-          }
-        />
-        <Route path="/case-studies" element={<CaseStudies />} />
-        <Route path="/insights" element={<Insights />} />
-        <Route path="/industries" element={<Industries />} />
-      </Routes>
-      <div className="bg-black">
-        <Contact />
-      </div>
-      <Footer />
-    </div>
-  );
-};
+// const App = () => {
+//   return (
+//     <div className="overflow-x-hidden">
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<Homepagelayout />} />
+//         <Route
+//           path="/services"
+//           element={
+//             <>
+//               <Servicesectioxxx />
+//               <Solutions />
+//               <Waccommerce />
+//             </>
+//           }
+//         />
+//         <Route path="/case-studies" element={<CaseStudies />} />
+//         <Route path="/insights" element={<Insights />} />
+//         <Route path="/industries" element={<Industries />} />
+//       </Routes>
+//       <div className="bg-black">
+//         <Contact />
+//       </div>
+//       <Footer />
+//     </div>
+//   );
+// };
 
-export default App;
+// export default App;
+
+<div
+  className={`fixed top-0 left-0 w-64 h-screen bg-cyan-800 text-base flex flex-col md:hidden items-center gap-6 font-medium text-gray-800 transition-all duration-500 ${
+    isMenuOpen ? "translate-x-0" : "-translate-x-full"
+  }`}
+>
+  {/* Company Logo */}
+  <div className="w-full flex items-center justify-between px-6 py-4 border-b border-cyan-700">
+    <img
+      src="/logo.png" // replace with your actual logo path
+      alt="Company Logo"
+      className="h-10 w-auto"
+    />
+    <button onClick={() => setIsMenuOpen(false)}>
+      <svg
+        className="h-6 w-6 text-white"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  {/* Nav links */}
+  <div className="flex flex-col items-center gap-6 mt-6">
+    {navLinks.map((link, i) => (
+      <a
+        key={i}
+        href={link.path}
+        onClick={() => setIsMenuOpen(false)}
+        className="text-white text-lg hover:text-gray-300"
+      >
+        {link.name}
+      </a>
+    ))}
+  </div>
+
+  {/* CTA Button */}
+  <button className="mt-auto mb-8 bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
+    Contact
+  </button>
+</div>
+

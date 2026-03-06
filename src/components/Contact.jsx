@@ -12,13 +12,13 @@ const Contact = () => {
   return (
     <div className="w-full bg-black">
     <div className="max-w-7xl flex flex-col md:flex-row p-4 md:p-3  font-mont mx-auto text-white bg-black">
-      <div className="flex flex-1">
+      <div className="flex flex-1 items-center justify-center md:items-start md:justify-start">
         {activeTab === "getaquote" && <Getaquote />}
         {activeTab === "partnership" && <Partnership />}
         {activeTab === "getenquiry" && <Genquiry />}
       </div>
 
-      <div className="flex flex-col font-mont flex-1 bg-black">
+      <div className="flex flex-col font-mont flex-1 bg-black mt-16">
         <div className="flex flex-col h-full justify-evenly">
           <div className="flex flex-row items-center justify-evenly font-semibold p-3 md:p-3">
             <button
@@ -46,7 +46,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter your first name"
-                className=" border-b-2 outline-none"/>
+                className=" border-b-2 outline-none border-gray-400 pb-2"/>
             </div>
 
             <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter your last name"
-                className="border-b-2 outline-none"/>
+                className="border-b-2 outline-none border-gray-400 pb-2"/>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Enter email"
-                className="border-b-2 outline-none"/>
+                className="border-b-2 outline-none border-gray-400 pb-2"/>
             </div>
             <div className="flex flex-col gap-3">
               <label htmlFor="">Tell us more</label>
@@ -76,9 +76,9 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <div className="w-full h-full flex justify-end">
+          <div className="w-full h-full flex justify-center md:justify-end">
             <button
-            className="w-[160px] md:w-[210px] text-[12px] md:text-[16px] border border-black bg-white font-mont text-black font-semibold px-4 py-3 flex items-center gap-3 hover:bg-black hover:text-white hover:border-white transition-all  duration-500 cursor-pointer mt-[40px]">
+            className="w-[180px] md:w-[210px] text-[12px] md:text-[16px] border border-black bg-white font-mont text-black font-semibold rounded-sm px-4 py-3 flex items-center gap-7 hover:bg-black hover:text-white hover:border-white transition-all  duration-500 cursor-pointer mt-[40px]">
             Send Enquiry <FaArrowRightLong />
           </button>
           </div>

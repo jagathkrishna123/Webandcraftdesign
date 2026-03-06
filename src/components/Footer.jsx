@@ -9,13 +9,13 @@ const Footer = () => {
       {/* Title...................................................................................*/}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 pb-16">
         <div>
-          <h2 className="text-[40px] md:text-[50px] font-mont">Get started now!</h2>
+          <h2 className="flex text-[40px] md:text-[50px] font-mont items-center justify-center md:items-start md:justify-start">Get started now!</h2>
           <p className="text-gray-400 text-[25px] mt-2 font-serif">
             It takes less than a minute of your time.
           </p>
         </div>
-        <button className="border border-white font-mont font-semibold px-6 py-3 rounded-xs hover:bg-white hover:text-black transition cursor-pointer">
-          Request a quote →
+        <button className="bg-blue-800 md:bg-none border border-blue-900 md:border-white font-mont font-semibold px-6 py-3 rounded-xs hover:bg-white hover:text-black transition cursor-pointer">
+          Request a quotee →
         </button>
       </div>
 
@@ -86,12 +86,12 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-8 md:gap-0 max-w-7xl mx-auto mt-12 items-center justify-between text-gray-400">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-0 max-w-7xl mx-auto mt-[80px] items-center justify-between text-gray-400">
         <div>
           <h2>Scanntek © 2025 All rights reserved</h2>
         </div>
         <div>
-          <h2>Privacy Policy | Terms & Conditions</h2>
+          <h2 className="tracking-widest">Privacy Policy | Terms & Conditions</h2>
         </div>
         <div className="max-w-lg flex flex-row justify-between items-center gap-[25px]">
           <FaLinkedin  className="text-[26px] text-gray-300"/>

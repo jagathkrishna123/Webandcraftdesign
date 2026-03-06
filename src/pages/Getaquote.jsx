@@ -8,7 +8,7 @@ const Getaquote = () => {
     <div className='w-[400px] h-[565px] p-3 bg-black text-white font-geist '>
         <div className='flex flex-col p-3 h-full justify-evenly'> 
             <div className='text-5xl font-normal text-gray-300'>
-                <p>Discover Digital Transformation</p>
+                <p className='leading-relaxed'>Discover Digital Transformation</p>
             </div>
             <div className='text-[16px] font-poppins'>
                 <p>Please feel free to share your thoughts and we can discuss it over a cup of tea.</p>

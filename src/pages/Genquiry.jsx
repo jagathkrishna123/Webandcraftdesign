@@ -7,7 +7,7 @@ const Genquiry = () => {
     <div className='w-[400px] h-[565px] p-3 bg-black text-white font-geist '>
             <div className='flex flex-col p-3 h-full justify-evenly'> 
                 <div className='text-5xl font-normal text-gray-300'>
-                    <p>Tell Us What’s on Your Mind?</p>
+                    <p className='leading-relaxed'>Tell Us What’s on Your Mind?</p>
                 </div>
                 <div className='text-[16px] font-poppins'>
                     <p>Shoot anything that pops up in your head. From artificial intelligence to fun memes, we are all ears!.</p>

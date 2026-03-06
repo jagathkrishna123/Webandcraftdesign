@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { INDUSTRYDATA } from "../constants";
 import Insights from "./Insights";
+import Banner2 from "./Banner2";
 
 const Industries = () => {
   const [number, setNumber] = useState(0);
@@ -58,7 +59,7 @@ const Industries = () => {
       <div className="flex flex-col w-full">
         {INDUSTRYDATA.map((item, index) => (
           <div key={index}>
-            <p className="text-[40px] font-mont">{item.text} <hr className="border-t-2 border-gray-300 my-3"/></p>
+            <p className="text-[25px] md:text-[40px] font-mont px-4 py-2">{item.text} <hr className="border-t-2 border-gray-300 my-3"/></p>
           </div>
         ))}
       </div>

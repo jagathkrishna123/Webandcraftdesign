@@ -4,8 +4,8 @@ import {OUR_SERVICES} from "../constants"
 const Whatwedo = () => {
   return (
     <div className='max-w-7xl flex flex-col  mx-auto bg-white py-16'>
-        <div className='flex flex-col '>
-            <p className='text-[30px] md:text-[53px] font-medium font-mont text-gray-800'>What We Do</p>
+        <div className='flex flex-col w-full items-start justify-start'>
+            <p className='flex text-[30px] md:text-[53px] font-medium font-mont text-gray-800 mx-auto'>What We Doo</p>
         </div>
 
         <div className='w-full grid grid-col-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-y-9 mt-5 px-4 gap-3'>
